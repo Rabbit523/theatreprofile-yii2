@@ -1,0 +1,12 @@
+RewriteEngine on
+
+# Start A2 Switcher Block
+# Do not remove or modify this block! Added by PHP Switcher from cPanel to use an alternate PHP version. Contact Support for details.
+<IfModule mod_suphp.c>
+  AddHandler application/x-httpd-php-5.5.0 .php
+</IfModule>
+# End A2 Switcher Block
+
+RewriteCond %{HTTP_HOST} ^theaterprofile\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.theaterprofile\.com$
+RewriteRule ^/?$ "https\:\/\/www\.theatreprofile\.com" [R=301,L]

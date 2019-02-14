@@ -1,0 +1,402 @@
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "log" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "request" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "urlManager" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.web.filters.CFilterChain] Running filter SiteController.filteraccessControl()
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "user" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "session" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "clientScript" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "minScriptCache" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (116)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] Productioncompanycrew.findAll()
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "db" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_productioncompanycrew` `t` WHERE companyID=141 and roleID in (1235,2058)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/07 21:57:04 [trace] [system.CModule] Loading "assetManager" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (196)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)
+2018/11/07 21:57:04 [info] [ext.minScript.components.ExtMinScript] The URL "/css/main.css" is relative to the document root and points to the file system path "/home/theatrep/public_html/ebq/css/main.css".
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (204)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "log" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "request" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "urlManager" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.web.filters.CFilterChain] Running filter SiteController.filteraccessControl()
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "user" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "session" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "clientScript" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "minScriptCache" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (116)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] Productioncompanycrew.findAll()
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "db" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_productioncompanycrew` `t` WHERE companyID=141 and roleID in (1235,2058)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/08 03:38:45 [trace] [system.CModule] Loading "assetManager" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (196)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)
+2018/11/08 03:38:45 [info] [ext.minScript.components.ExtMinScript] The URL "/css/main.css" is relative to the document root and points to the file system path "/home/theatrep/public_html/ebq/css/main.css".
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (204)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "log" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "request" application component
+in /home/theatrep/public_html/ebq/index.php (18)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "urlManager" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.web.filters.CFilterChain] Running filter SiteController.filteraccessControl()
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "user" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "session" application component
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "clientScript" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "minScriptCache" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (116)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (4)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] Productioncompanycrew.findAll()
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "db" application component
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productioncompanycrew`
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_productioncompanycrew` `t` WHERE companyID=141 and roleID in (1235,2058)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (35)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_production`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_productionvenue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_venue`
+in /home/theatrep/public_html/theatreprofile/protected/models/Venue.php (99)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_show`
+in /home/theatrep/public_html/theatreprofile/protected/models/Show.php (107)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Productioncompanycrew.production
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `production`.`id` AS `t1_c0`, `production`.`showID` AS `t1_c1`, `production`.`firstPreviewDate` AS `t1_c2`, `production`.`startDate` AS `t1_c3`, `production`.`endDate` AS `t1_c4`, `production`.`descr` AS `t1_c5`, `production`.`categoryID` AS `t1_c6`, `production`.`productionName` AS `t1_c7`, `production`.`duration` AS `t1_c8`, `production`.`intermissions` AS `t1_c9`, `production`.`privateRatings` AS `t1_c10` FROM `tbl_production` `production`  WHERE (`production`.`id`=:ypl0)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+in /home/theatrep/public_html/ebq/protected/controllers/SiteController.php (50)
+in /home/theatrep/public_html/ebq/index.php (31)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Production.productionvenues
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `productionvenues`.`id` AS `t1_c0`, `productionvenues`.`productionID` AS `t1_c1`, `productionvenues`.`venueID` AS `t1_c2`, `productionvenues`.`startDate` AS `t1_c3`, `productionvenues`.`endDate` AS `t1_c4`, `venue`.`id` AS `t2_c0`, `venue`.`venueName` AS `t2_c1`, `venue`.`addressID` AS `t2_c2`, `venue`.`descr` AS `t2_c3` FROM `tbl_productionvenue` `productionvenues`  LEFT OUTER JOIN `tbl_venue` `venue` ON (`productionvenues`.`venueID`=`venue`.`id`) WHERE (`productionvenues`.`productionID`=:ypl0) ORDER BY productionvenues.startDate desc
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (249)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.ar.CActiveRecord] lazy loading Production.show
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT `show`.`id` AS `t1_c0`, `show`.`showName` AS `t1_c1`, `show`.`categoryID` AS `t1_c2`, `show`.`showDesc` AS `t1_c3`, `show`.`showDate` AS `t1_c4` FROM `tbl_show` `show`  WHERE (`show`.`id`=:ypl0)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (253)
+in /home/theatrep/public_html/theatreprofile/protected/models/Production.php (127)
+in /home/theatrep/public_html/ebq/protected/views/site/index.php (41)
+2018/11/14 06:56:20 [trace] [system.CModule] Loading "assetManager" application component
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (196)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)
+2018/11/14 06:56:20 [info] [ext.minScript.components.ExtMinScript] The URL "/css/main.css" is relative to the document root and points to the file system path "/home/theatrep/public_html/ebq/css/main.css".
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (204)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (290)
+in /home/theatrep/public_html/ebq/protected/extensions/minScript/components/ExtMinScript.php (353)

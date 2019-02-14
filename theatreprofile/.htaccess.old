@@ -1,0 +1,14 @@
+SuPHP_ConfigPath /home/theatrep/public_html/php.ini
+
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+RewriteCond %{HTTP_HOST} ^theatrep\.theatreprofile\.a2hosted\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.theatrep\.theatreprofile\.a2hosted\.com$
+RewriteRule ^/?$ "http\:\/\/www\.theatreprofile\.com" [R=301,L]
+

@@ -1,0 +1,308 @@
+<?php
+
+// uncomment the following to define a path alias
+// Yii::setPathOfAlias('local','path/to/local-folder');
+//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+
+// This is the main Web application configuration. Any writable
+// CWebApplication properties can be configured here.
+return array(
+	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+	'name'=>'Theatre Profile',
+	'timeZone' => 'UTC',
+	'aliases' => array(
+        'Zend' => realpath(__DIR__ .'/../vendors/Zend/'),
+        'Google' => realpath(__DIR__ .'/../vendors/Google/'),
+        'Facebook' => realpath(__DIR__ .'/../vendors/Facebook/'),
+        'PhpOffice' => realpath(__DIR__ .'/../vendors/PhpOffice/'),
+		'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap/'),
+		'yiistrap' => dirname(__FILE__).'/../extensions/yiistrap/',
+		'audit' => dirname(__FILE__).'/../modules/audit/',
+		'webuserbehavior' => dirname(__FILE__).'/../extensions/webuserbehavior/',
+    ),
+
+	// preloading 'log' component
+	'preload' => array(
+        'log',
+        'errorHandler', // handle fatal errors
+        'Jsonize',
+    ),
+
+	// autoloading model and component classes
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+        'application.modules.user.*',
+		'application.modules.user.models.*',
+        'application.modules.user.components.*',
+        'application.modules.user.widgets.*',
+        'application.modules.rights.*',
+        'application.modules.rights.components.*',
+		'application.vendors.*',
+		'application.helpers.*',
+		'yiistrap.helpers.*',
+		'yiistrap.behaviors.*',
+		'yiistrap.components.*',
+		'yiistrap.widgets.*',
+	),
+
+	'modules'=>array(
+		// uncomment the following to enable the Gii tool
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>'!password1',
+			// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters'=>array('127.0.0.1','::1'),
+			'generatorPaths' => array('yiistrap.gii'),
+		),
+		'user'=>array(
+                'tableUsers' => 'user',
+                'tableProfiles' => 'profile',
+                'tableProfileFields' => 'profile_field',
+                # encrypting method (php hash function)
+                'hash' => 0,
+ 
+                # send activation email
+                'sendActivationMail' => true,
+ 
+                # allow access for non-activated users
+                'loginNotActiv' => false,
+ 
+                # activate user on registration (only sendActivationMail = false)
+                'activeAfterRegister' => false,
+ 
+                # automatically login from registration
+                'autoLogin' => true,
+ 
+                # registration path
+                'registrationUrl' => array('/user/registration'),
+ 
+                # recovery password path
+                'recoveryUrl' => array('/user/recovery'),
+ 
+                # login form path
+                'loginUrl' => array('/user/login'),
+ 
+                # page after login
+                'returnUrl' => array('/'),
+ 
+                # page after logout
+                'returnLogoutUrl' => array('/'),
+        ),
+         'rights'=>array(
+               'superuserName'=>'Superuser', // Name of the role with super user privileges. 
+               'authenticatedName'=>'Authenticated',  // Name of the authenticated user role. 
+               'userIdColumn'=>'id', // Name of the user id column in the database. 
+               'userNameColumn'=>'username',  // Name of the user name column in the database. 
+               'enableBizRule'=>true,  // Whether to enable authorization item business rules. 
+               'enableBizRuleData'=>true,   // Whether to enable data for business rules. 
+               'displayDescription'=>true,  // Whether to use item description instead of name. 
+               'flashSuccessKey'=>'RightsSuccess', // Key to use for setting success flash messages. 
+               'flashErrorKey'=>'RightsError', // Key to use for setting error flash messages.
+               'baseUrl'=>'/rights', // Base URL for Rights. Change if module is nested. 
+               'layout'=>'rights.views.layouts.main',  // Layout to use for displaying Rights. 
+               'appLayout'=>'application.views.layouts.main', // Application layout. 
+               //'cssFile'=>'', // Style sheet file to use for Rights. 
+               'install'=>false,  // Whether to enable installer. 
+               'debug'=>false, 
+        ),
+		'audit' => array(
+            // path to the AuditModule class
+            'class' => 'audit.AuditModule',
+ 
+            // set this to your user view url,
+            // AuditModule will replace --user_id-- with the actual user_id
+            'userViewUrl' => array('/user/user/view', 'id' => '--user_id--'),
+ 
+            // Set to false if you do not wish to track database audits.
+            'enableAuditField' => true,
+ 
+            // The ID of the CDbConnection application component. If not set, a SQLite3
+            // database will be automatically created in protected/runtime/audit-AuditVersion.db.
+            'connectionID' => 'db',
+ 
+            // Whether the DB tables should be created automatically if they do not exist. Defaults to true.
+            // If you already have the table created, it is recommended you set this property to be false to improve performance.
+            'autoCreateTables' => false,
+ 
+            // The layout used for module controllers.
+            'layout' => 'audit.views.layouts.column1',
+ 
+            // The widget used to render grid views.
+            'gridViewWidget' => 'yiistrap.widgets.TbGridView',
+ 
+            // The widget used to render detail views.
+            'detailViewWidget' => 'zii.widgets.CDetailView',
+ 
+            // Defines the access filters for the module.
+            // The default is AuditAccessFilter which will allow any user listed in AuditModule::adminUsers to have access.
+            'controllerFilters' => array(
+                'auditAccess' => array('audit.components.AuditAccessFilter'),
+            ),
+ 
+            // A list of users who can access this module.
+            'adminUsers' => array('admin','g3kelly','Sufern'),
+ 
+            // The path to YiiStrap.
+            // Only required if you do not want YiiStrap in your app config, for example, if you are running YiiBooster.
+            // Only required if you did not install using composer.
+            // Please note:
+            // - You must download YiiStrap even if you are using YiiBooster in your app.
+            // - When using this setting YiiStrap will only loaded in the menu interface (eg: index.php?r=menu).
+            'yiiStrapPath' => dirname(__FILE__).'/../extensions/yiistrap',
+        ),
+	),
+
+	// application components
+	'components'=>array(
+		'request'=>array(
+			'enableCookieValidation'=>true,
+			'enableCsrfValidation'=>true,
+		),
+		'clientScript'=>array(
+            'coreScriptPosition'=>CClientScript::POS_HEAD,
+            'defaultScriptFilePosition'=>CClientScript::POS_END,
+            'defaultScriptPosition'=>CClientScript::POS_END,
+            'class'=>'ext.minScript.components.ExtMinScript',
+            'minScriptDisableMin' => array('/[-\.]min\.(?:js)$/i'),
+	    'packages'=>array(
+                'jquery'=>array(
+                    'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/1.11.3/',
+                    'js'=>array('jquery.min.js'),
+					'coreScriptPosition' => CClientScript::POS_HEAD
+                ),
+                'jquery.ui'=>array(
+                    'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/',
+                    'js'=>array('jquery-ui.min.js'),
+					'coreScriptPosition' => CClientScript::POS_HEAD
+                ),
+            ),
+        ),
+		'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
+		'yiistrap' => array(
+            'class' => 'yiistrap.components.TbApi',   
+        ),
+		'user'=>array(
+                'class'=>'RWebUser',
+				'behaviors' => array(
+					'webuserbehavior.WebUserBehavior'
+				),
+                // enable cookie-based authentication
+                'allowAutoLogin'=>true,
+                'loginUrl'=>array('/user/login'),
+        ),
+		'authManager'=>array(
+            'class'=>'RDbAuthManager',
+            'connectionID'=>'db',
+            'itemTable'=>'authitem',
+            'itemChildTable'=>'authitemchild',
+            'assignmentTable'=>'authassignment',
+            'rightsTable'=>'rights',
+			'defaultRoles'=>array('Guest'),
+        ),
+		// uncomment the following to enable URLs in path-format
+		'urlManager'=>array(
+			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			//'caseSensitive'=>false, 
+			'rules'=>array(
+				'<view:(about|terms|grow|privacy|social|pilot|Actor-TheatreProfessionals-Form|Consumer-Pilot-Program-Form|Education-Application-Form|Venue-Pilot-Program-Form|Theatre-Form)>'=>'site/page',
+                '<action:contact|facebook_feed|launchreportingdashboard>'=>'site/<action>',
+				// REST patterns
+				array('api/list', 'pattern'=>'api/<model:\w+>', 'verb'=>'GET'),
+				array('api/view', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'GET'),
+				array('api/authorize', 'pattern'=>'api/<model:\w+>/authorize/<key:.+>', 'verb'=>'GET'),
+				array('api/generatekey', 'pattern'=>'api/<model:\w+>/generatekey', 'verb'=>'GET'),
+				//array('api/update', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'PUT'),
+				//array('api/delete', 'pattern'=>'api/<model:\w+>/<id:\d+>', 'verb'=>'DELETE'),
+				//array('api/create', 'pattern'=>'api/<model:\w+>', 'verb'=>'POST'),
+				'<controller:\w+>/<id:\d+>/<title>'=>'<controller>/view',
+				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			),
+		),
+		// uncomment the following to use a MySQL database
+		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=theatrep_test',
+			'emulatePrepare' => true,
+			'username' => 'theatrep_admin',
+			'password' => '!password1',
+			'initSQLs'=>array("set time_zone='+00:00';"),
+			'charset' => 'utf8',
+			
+            // set to true to enable database query logging
+            // don't forget to put `profile` in the log route `levels` below
+            'enableProfiling' => false,
+ 
+            // set to true to replace the params with the literal values
+            'enableParamLogging' => false,
+		),
+            'image'=>array(
+            'class'=>'application.extensions.image.CImageComponent',
+            // GD or ImageMagick
+            'driver'=>'GD',
+            // ImageMagick setup path
+            //'params'=>array('directory'=>'/opt/local/bin'),
+            ),		
+		'errorHandler' => array(
+            // path to the AuditErrorHandler class
+            'class' => 'audit.components.AuditErrorHandler',
+ 
+            // set this as you normally would for CErrorHandler
+            'errorAction' => 'site/error',
+ 
+            // Set to false to only track error requests.  Defaults to true.
+            'trackAllRequests' => false,
+ 
+            // Set to false to not handle fatal errors.  Defaults to true.
+            'catchFatalErrors' => true,
+ 
+            // Request keys that we do not want to save in the tracking data.
+            'auditRequestIgnoreKeys' => array('PHP_AUTH_PW', 'password'),
+ 
+        ),
+		'log'=>array(
+			'class'=>'CLogRouter',
+			'routes'=>array(
+				// add a new log route
+                array(
+                    // path to the AuditLogRoute class
+                    'class' => 'audit.components.AuditLogRoute',
+ 
+                    // can be: trace, warning, error, info, profile, audit
+                    // can also be anything else you want to pass as a level to `Yii::log()`
+                    'levels' => 'error, warning',
+                ),
+				array(
+					'class'=>'CFileLogRoute',
+					'levels'=>'error, warning',
+				),
+				// uncomment the following to show log messages on web pages
+				/*
+				array(
+					'class'=>'CWebLogRoute',
+				),
+				*/
+			),
+		),
+		'Jsonize'=>array('class'=>'Jsonize'),
+	),
+	
+	//Controller map
+	'controllerMap'=>array(
+		'min'=>array(
+			'class'=>'ext.minScript.controllers.ExtMinScriptController',
+		),
+    ),
+
+	// application-level parameters that can be accessed
+	// using Yii::app()->params['paramName']
+	'params'=>array(
+		'adminEmail'=>'info@theatreprofile.com',
+		'mediaServeUrl'=>'http://test.theatreprofile.com',
+		'webmasterEmail'=>'webmaster@theatreprofile.com',
+	),
+);

@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+
+#Sitemap Reference
+Sitemap:http://www.theatreprofile.com/sitemap_index.xml.gz

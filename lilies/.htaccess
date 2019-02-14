@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^lilies\.theatreprofile\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.lilies\.theatreprofile\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^/?$ "https\:\/\/www\.theatreprofile\.com\/production\/9490\/lilies\-at\-evenings\-at\-west\-side" [R=301,L]
+
